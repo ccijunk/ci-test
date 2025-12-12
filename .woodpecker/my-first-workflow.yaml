@@ -1,5 +1,5 @@
 when:
-  - event: push
+  - event: [push, manual]
     branch: main
 
 steps:
@@ -13,4 +13,5 @@ steps:
     commands:
       - echo "Testing ..."
       - ./executable
+      - uname -m
     
